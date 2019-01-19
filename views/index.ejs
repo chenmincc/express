@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script src="/pb.js"></script>
+    <%- include('./header') %>
+    <h1>我是首页</h1>
+    <%= name %>
+    <%= age %>
+    <% for(var i = 0; i < list.length;i++){ %>
+        <li><%= list[i].run %></li>
+    <% } %>
+
+    <% if(age > 90){ %>
+        <span>厉害了</span>
+    <%} else if(age > 18 && age <= 90){ %>
+        <span>666</span>
+    <% }else{ %>
+        <span>小鲜肉</span>
+    <% } %>
+    <%- abc %>
+    <%%
+</body>
+</html>
